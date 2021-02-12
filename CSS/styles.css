@@ -159,7 +159,7 @@ button__secondary: #008000
 
   /*margin 0 auto centers my profile*/
   .profile {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
   }
 
@@ -179,40 +179,16 @@ button__secondary: #008000
   text-align: center;
   }
 
-  .Skillset_table {
+  table {
   background-color: var(--background_color_workgrid__Contactme);
   color: var(--headline-2);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  border: 2px;
   }
 
-  .Skillset_table thead tr {
-  background-color: var(--button__normal);
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
+  caption{
+  background-color: var(--background_color_workgrid__Contactme);
+  color: var(headline-color__h2);
   }
-
-  .Skillset_table th,
-  .Skillset_table td {
-  padding: 12px 15px;
-  text-align: left;
-  }
-
-  .Skillset_table tbody tr {
-  border-bottom: 1px solid #dddddd;
-  }
-
-  .Skillset_table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-  }
-
-  .Skillset_table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
-  }
-
 
   /*applies for all a elements*/
   a:hover {
@@ -364,17 +340,17 @@ button__secondary: #008000
   }
 
   @media all and (max-width: 500px) {
-  .work__grid {
+  .work__grid,.contact__grid {
     grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
-  .work__grid{
+  .work__grid,.contact__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (max-width: 750px) {
-  .work__grid {
+  .work__grid,.contact__grid {
     grid-gap: 10px;
   }
   .workgrid_item,.contactgrid__item :last-child {
