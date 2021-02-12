@@ -364,12 +364,12 @@ button__secondary: #008000
   }
 
   @media all and (max-width: 500px) {
-  .work__grid,.contact__grid {
+  .work__grid {
     grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
-  .work__grid,.contact__grid {
+  .work__grid{
     grid-template-columns: 1fr 1fr;
   }
 }
