@@ -159,7 +159,7 @@ button__secondary: #008000
 
   /*margin 0 auto centers my profile*/
   .profile {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   }
 
@@ -350,7 +350,7 @@ button__secondary: #008000
   }
 }
 @media all and (max-width: 750px) {
-  .work__grid,.contact__grid {
+  .work__grid {
     grid-gap: 10px;
   }
   .workgrid_item,.contactgrid__item :last-child {
