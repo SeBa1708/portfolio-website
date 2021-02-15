@@ -13,30 +13,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-   <!-- Add Logo here -->
-    <img src="img/logo.png" alt="logo" class="logo">
-    <div class="page-header__item">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-         <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-         </li >
-         <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-         </li>
-         <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-         </li>
-         <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Main content -->
-  <section>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header class="page-header">
+        <!-- Add Logo here -->
+        <img src="img/logo.png" alt="logo" class="logo">
+          <div class="page-header__item">
+            <nav class="main-navigation page-header__item">
+              <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                  <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li >
+                <li role="presentation">
+                <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+                <li role="presentation">
+                  <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+      <!-- Main content -->
+      <section>
         <h1>Work</h1>
         <div class="work__grid">
             <div class="workgrid__item">
@@ -82,9 +84,10 @@
                 <a href="#">Contact me</a>
             </div>
         </div>
-     </section>
-  <!-- Footer with links to social media profiles -->
-  <footer class="page-footer">
+      </section>
+    </div>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
     <p> <span>Find me on</span></p>
     <div class= social-media!>
     <!-- Github logo -->
@@ -94,7 +97,7 @@
     <!-- LinkedIn logo -->
     <img src="img/iconfinder_linkedin_570628.png" alt="linkedin">
     </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 </html>

@@ -13,69 +13,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-   <!-- Add Logo here -->
-    <img src="img/logo.png" alt="logo" class="logo">
-    <div class="page-header__item">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-         <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-         </li >
-         <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-         </li>
-         <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-         </li>
-         <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         </li>
-        </ul>
-      </nav>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header class="page-header">
+        <!-- Add Logo here -->
+        <img src="img/logo.png" alt="logo" class="logo">
+          <div class="page-header__item">
+            <nav class="main-navigation page-header__item">
+              <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                  <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li >
+                <li role="presentation">
+                <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+                <li role="presentation">
+                  <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+      <main>
+        <div class="contact__grid">
+          <div class="contactgrid__item">
+            <div class="contact__me"> Contact me </div> <br>
+            Sebastian Bachmann <br>
+            55131 Mainz <br>
+            Germany <br>
+            <p> </p>
+            E-Mail:<a href="mailto:sebastian.bachmann88@gmail.com">sebastian.bachmann88@gmail.com<a/> <br>
+            Telephone:<a href="tel: +49 015756107527"> call me</a>
+          </div>
+          <div class="contactgrid__item">
+            <div class="Leavea__message"> Or leave me a message </div>
+            <!-- Id to distinguish between other forms -->
+            <p></p>
+          </div>
+          <div class="contactgrid__item">
+            <form action="" method="post" id="contact-form">
+              <label class="standard__label" for="contact-email">Email: </label>
+              <input type="email" id="contact-email" required>
+              <p></p>
+              <label class="standard__label" for= "contact-Telephone">Telephone: </label>
+              <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-Telephone">
+              <p></p>
+              <label class="standard__label" for="input Message">Message: </label>
+              <textarea required maxlength="240" name="Message" rows="4" cols="40"></textarea>
+              <input type="submit"value="Send mesaage">
+            </form>
+          </div>
+        </div>
+      </main>
     </div>
- </header>
-  <main>
-    <div class="contact__grid">
-      <div class="contactgrid__item">
-        <div class="contact__me"> Contact me </div> <br>
-        Sebastian Bachmann <br>
-        55131 Mainz <br>
-        Germany <br>
-        <p> </p>
-        E-Mail:<a href="mailto:sebastian.bachmann88@gmail.com">sebastian.bachmann88@gmail.com<a/> <br>
-          Telephone:<a href="tel: +49 015756107527"> call me</a>
-      </div>
-      <div class="contactgrid__item">
-        <div class="Leavea__message"> Or leave me a message </div>
-      <!-- Id to distinguish between other forms -->
-        <p></p>
-        <form action="" method="post" id="contact-form">
-          <label class="standard__label" for="contact-email">Email: </label>
-          <input type="email" id="contact-email" required>
-          </label>
-          <p></p>
-          <label class="standard__label" for= "contact-Telephone">Telephone: </label>
-          <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-Telephone">
-          <p></p>
-          <label class="standard__label" for="input Message">Message: </label>
-          <textarea required maxlength="240" name="Message" rows="4" cols="40"></textarea>
-          <input type="submit"value="Send mesaage">
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <p> <span>Find me on</span></p>
-    <div class= social-media!>
-    <!-- Github logo -->
-    <img src="img/iconfinder_github_317712.svg" alt="github">
-    <!-- Twitter logo -->
-    <img src="img/iconfinder_square-twitter_317723.svg" alt="twitter">
-    <!-- LinkedIn logo -->
-    <img src="img/iconfinder_linkedin_570628.png" alt="linkedin">
-    </div>
-  </footer>
-  <script src="js/tota11y.min.js"></script>
+    <footer class="page-footer">
+      <p> <span>Find me on</span></p>
+      <div class= social-media!>
+        <!-- Github logo -->
+      <img src="img/iconfinder_github_317712.svg" alt="github">
+      <!-- Twitter logo -->
+      <img src="img/iconfinder_square-twitter_317723.svg" alt="twitter">
+      <!-- LinkedIn logo -->
+      <img src="img/iconfinder_linkedin_570628.png" alt="linkedin">
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </div>
 </body>
 </html>

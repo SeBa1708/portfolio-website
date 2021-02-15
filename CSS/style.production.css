@@ -29,19 +29,47 @@ button__secondary: #008000
   */
 
 /* Color Variables*/
+  :root{
+  --background__color: #c0C0c0;
+  --headline-color__h1: #FF0000;
+  --headline-color__h2: #000000;
+  --buttonbackground__color: #008000;
+  --background_color_workgrid__Contactme: #D3D3D3;
+  --color_normal__button: #FFFFFF;
+}
  /* Font Variables */
+:root{
+  --font-size__normal: 16px;
+  --font-size__h1: 28px;
+  --font-size__h2: 22px;
+  --font-weight__normal: 400;
+  --font-weight__headlines: 700;
+}
 
 /* a Styling */
 
+:root{
+--a__normal: #0000ff;
+--a__visited: #800080;
+--a__active: #FF0000;
+}
+
 /* button */
+
+:root {
+--button__normal: #008000;
+--button__no: #FF0000;
+--button__visited: #800080;
+--button__active:  #FF0000;
+}
 
 
   body {
-  background-color:  #c0C0c0;
+  background-color:  var(--background__color);
 
-  font-weight: 400;
+  font-weight: var(--font-weight__normal);
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size__normal);
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
@@ -65,7 +93,7 @@ button__secondary: #008000
   }
 
   .workgrid__item {
-  background-color: #D3D3D3;
+  background-color: var(--background_color_workgrid__Contactme);
   padding: 10px;
   }
 
@@ -85,18 +113,18 @@ button__secondary: #008000
 
 
   .contactgrid__item {
-  background-color: #D3D3D3;
+  background-color: var(--background_color_workgrid__Contactme);
   padding: 10px;
   text-align: left;
   }
 
   .Leavea__message {
-    font-size: 22px;
+    font-size: var(--font-size__h2);
     font-family: 'Hachi Maru Pop', cursive;
   }
 
   .contact__me {
-    font-size: 22px;
+    font-size: var(--font-size__h2);
     font-family: 'Hachi Maru Pop', cursive;
   }
 
@@ -154,24 +182,24 @@ button__secondary: #008000
   }
 
   h1 {
-  color: #FF0000;
+  color: var(--headline-color__h1);
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 28px;
+  font-size: var(--font-size__h1);
   font-weight: 700;
   text-align: center;
   }
 
   h2 {
-  color: undefined;
+  color: var(headline-color__h2);
   font-family: 'Roboto', cursive;
-  font-size: 22px;
+  font-size: var(--font-size__h2);
   font-weight: 700;
   text-align: center;
   }
 
   .Skillset_table {
-  background-color: #D3D3D3;
-  color: undefined;
+  background-color: var(--background_color_workgrid__Contactme);
+  color: var(--headline-2);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -179,7 +207,7 @@ button__secondary: #008000
   }
 
   .Skillset_table thead tr {
-  background-color: #008000;
+  background-color: var(--button__normal);
   color: #ffffff;
   text-align: left;
   font-weight: bold;
@@ -211,7 +239,7 @@ button__secondary: #008000
 
   a:visited {
   /* visited link */
-  color: #800080;
+  color: var(--a__visited);
   }
 
   a:hover {
@@ -221,7 +249,7 @@ button__secondary: #008000
 
   a:active {
   /* active link */
-  color: #FF0000
+  color: var(--a__active)
   }
 
   button {
@@ -230,8 +258,8 @@ button__secondary: #008000
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #008000;
-  color: #FFFFFF;
+  background-color: var(--button__normal);
+  color: var(--color_normal__button);
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -242,7 +270,7 @@ button__secondary: #008000
 
   button:visited {
   /* visited link */
-  color: #800080;
+  color: var(--a__visited);
   }
 
   button:hover, button:focus {
@@ -254,7 +282,7 @@ button__secondary: #008000
 
   button:active {
   /* active link */
-  color: #FF0000;
+  color: var(--a__active);
   }
 
   .contact {
@@ -263,14 +291,14 @@ button__secondary: #008000
 
   .button__no
   {
-  background-color: #FF0000;
+  background-color: var(--button__no);
   }
 
   .mainbody__aboutme{
     text-align: center;
   }
 
-  .button {
+  .button, button {
   /* overwrites browser defaults */
   /* resets the border */
   border: none;
@@ -278,28 +306,7 @@ button__secondary: #008000
   /* takes the font from the outer container */
   font-family: inherit;
   /* style button */
-  background-color: #008000;
-  text-align: right;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.5s opacity;
-  -o-transition: 0.5s opacity;
-  transition: 0.5s opacity;
-  }
-
-  button {
-  /* overwrites browser defaults */
-  /* resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* style button */
-  background-color: #008000;
+  background-color: var(--button__normal);
   text-align: right;
   color: white;
   text-decoration: none;
@@ -450,6 +457,15 @@ button__secondary: #008000
   }
 }
 
+#page-conatainer{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 6rem;    /* Footer height */
+}
+
   .page-footer {
     clear: both;
     display: -webkit-box;
@@ -460,4 +476,8 @@ button__secondary: #008000
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
   }
