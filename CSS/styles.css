@@ -172,7 +172,7 @@ button__secondary: #008000
   }
 
   h2 {
-  color: var(headline-color__h2);
+  color: var(--headline-color__h2);
   font-family: 'Roboto', cursive;
   font-size: var(--font-size__h2);
   font-weight: 700;
@@ -222,11 +222,6 @@ button__secondary: #008000
   a:visited {
   /* visited link */
   color: var(--a__visited);
-  }
-
-  a:hover {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
   }
 
   a:active {
@@ -309,56 +304,6 @@ button__secondary: #008000
   opacity: 0.8;
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
-  }
-
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes cloud-move {
-   from {
-     transform: translate(0, 50px);
-   }
-   to {
-     transform: translate(200px, 50px);
-   }
-  }
-
-  .cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
   @media all and (max-width: 750px){
   /* shared code */
   }
@@ -382,7 +327,7 @@ button__secondary: #008000
     grid-row: auto / auto;
   }
   h1 {
-    font-size: var(font-size__h2);
+    font-size: var(--font-size__h2);
   }
 }
 
