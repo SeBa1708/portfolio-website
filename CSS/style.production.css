@@ -6,6 +6,13 @@
 */
 
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
 Colors used
 
 Text Color (Dark Gray): #000000;
@@ -266,6 +273,7 @@ button__secondary: #008000
   }
 
   .button {
+<<<<<<< HEAD
   /* overwrites browser defaults */
   /* resets the border */
   border: none;
@@ -287,6 +295,8 @@ button__secondary: #008000
   }
 
   button {
+=======
+>>>>>>> main
   /* overwrites browser defaults */
   /* resets the border */
   border: none;
@@ -295,6 +305,30 @@ button__secondary: #008000
   font-family: inherit;
   /* style button */
   background-color: #008000;
+<<<<<<< HEAD
+=======
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.5s opacity;
+  -o-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+  }
+
+  button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #008000;
+>>>>>>> main
   text-align: right;
   color: white;
   text-decoration: none;
